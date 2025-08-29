@@ -1,0 +1,25 @@
+////Exercise 1: .map()
+let users = [
+  { id: 1, name: "Alice" },
+  { id: 2, name: "Bob" }
+];
+let names = users.map(user => user.name);
+console.log("Exercise 1:", names);
+
+////Exercise 2: .filter()
+let people = [
+  { name: "Tom", age: 16 },
+  { name: "Jerry", age: 18 },
+  { name: "Spike", age: 22 }
+];
+let adults = people.filter(person => person.age >= 18);
+console.log("Exercise 2:", adults);
+
+////Exercise 3: .reduce()
+people = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 32 },
+  { name: "Charlie", age: 29 }
+];
+let oldest = people.reduce((max, person) => person.age > max.age ? person : max);
+console.log("Exercise 3:", oldest);
